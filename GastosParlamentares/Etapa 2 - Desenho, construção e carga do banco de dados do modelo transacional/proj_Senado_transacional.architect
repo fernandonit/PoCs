@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.9">
+ <project-name>proj_Senado_v1</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+  <data-source id="DS2">
+   <property key="Connection Type" value="PostgreSQL" />
+   <property key="Logical" value="Parlamento" />
+   <property key="JDBC URL" value="jdbc:postgresql://localhost:5432/parlamento" />
+   <property key="UID" value="af" />
+   <property key="PWD" value="oasiS1994" />
+   <property key="ca.sqlpower.architect.etl.kettle.database" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.port" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.hostname" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.login" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.password" value="" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+  <database id="DB0" populated="true" UUID="18248c44-1b5b-4bdf-a5f7-f77330c88892" dbcs-ref="DS2" name="Parlamento" physicalName="parlamento" >
+   <catalog id="CAT1" populated="true" UUID="ff0d9134-9d8e-4ab4-88cc-0c772ca29374" name="parlamento" nativeTerm="database" physicalName="parlamento" >
+    <schema id="SCH2" populated="true" UUID="804f19ec-9fb6-4e93-8161-fc300298c143" name="" nativeTerm="schema" physicalName="" >
+     <table id="TAB3" populated="false" UUID="8e90689a-3e92-47b6-bee3-92a57233676c" name="sql_features" objectType="TABLE" physicalName="sql_features" >
+      <remarks></remarks>
+      <folder id="FOLTAB31" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX4" populated="true" UUID="4ea8e861-6121-4293-8c4a-93f6f7221d0b" clustered="false" name="sql_features_pk" physicalName="sql_features_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB5" populated="false" UUID="499688d4-f98b-4acf-9153-01fef395f921" name="sql_implementation_info" objectType="TABLE" physicalName="sql_implementation_info" >
+      <remarks></remarks>
+      <folder id="FOLTAB51" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX6" populated="true" UUID="268afe44-cc15-4d32-b445-ab409c78daef" clustered="false" name="sql_implementation_info_pk" physicalName="sql_implementation_info_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB7" populated="false" UUID="63cf7bb4-594a-446e-9925-97682e51508e" name="sql_languages" objectType="TABLE" physicalName="sql_languages" >
+      <remarks></remarks>
+      <folder id="FOLTAB71" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX8" populated="true" UUID="53e7e4ef-ff1b-46ed-8237-631d3f63a694" clustered="false" name="sql_languages_pk" physicalName="sql_languages_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB9" populated="false" UUID="97b9c66c-5237-49e4-b7c5-99fee52a1dc5" name="sql_packages" objectType="TABLE" physicalName="sql_packages" >
+      <remarks></remarks>
+      <folder id="FOLTAB91" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX10" populated="true" UUID="889b8755-9f43-4c09-81c8-310a596a7305" clustered="false" name="sql_packages_pk" physicalName="sql_packages_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB11" populated="false" UUID="a0f57ab5-0857-4e01-80a4-f708d9b7d770" name="sql_parts" objectType="TABLE" physicalName="sql_parts" >
+      <remarks></remarks>
+      <folder id="FOLTAB111" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX12" populated="true" UUID="7f9d06d9-a28e-4206-be69-fa7f85ec165b" clustered="false" name="sql_parts_pk" physicalName="sql_parts_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB13" populated="false" UUID="cfa86930-d5de-49a6-b2b7-d3b007ff7547" name="sql_sizing" objectType="TABLE" physicalName="sql_sizing" >
+      <remarks></remarks>
+      <folder id="FOLTAB131" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX14" populated="true" UUID="5c0a84f3-f71e-40ac-b13c-7631410c1d25" clustered="false" name="sql_sizing_pk" physicalName="sql_sizing_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB15" populated="false" UUID="ba115089-14b3-4c6f-bb9e-0501f748c86b" name="sql_sizing_profiles" objectType="TABLE" physicalName="sql_sizing_profiles" >
+      <remarks></remarks>
+      <folder id="FOLTAB151" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX16" populated="true" UUID="26abfa37-a801-4e83-bcf4-99d7e77d0ba1" clustered="false" name="sql_sizing_profiles_pk" physicalName="sql_sizing_profiles_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB17" populated="false" UUID="378227ff-13c1-4db3-93e4-102633be3e49" name="_pg_foreign_data_wrappers" objectType="VIEW" physicalName="_pg_foreign_data_wrappers" >
+      <remarks></remarks>
+      <folder id="FOLTAB171" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX18" populated="true" UUID="df7efb83-bb71-4c81-91a7-0cbcfc8e61d7" clustered="false" name="_pg_foreign_data_wrappers_pk" physicalName="_pg_foreign_data_wrappers_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB19" populated="false" UUID="7ea189de-f9ae-4f7e-81ba-9489b2472938" name="_pg_foreign_servers" objectType="VIEW" physicalName="_pg_foreign_servers" >
+      <remarks></remarks>
+      <folder id="FOLTAB191" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX20" populated="true" UUID="f0b7f3bd-f0dc-448b-a8a7-ba907b7b8f9c" clustered="false" name="_pg_foreign_servers_pk" physicalName="_pg_foreign_servers_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB21" populated="false" UUID="cad1313d-e50c-4c35-b890-91e8d92c9a8c" name="_pg_foreign_table_columns" objectType="VIEW" physicalName="_pg_foreign_table_columns" >
+      <remarks></remarks>
+      <folder id="FOLTAB211" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX22" populated="true" UUID="fa4eef59-a42f-4046-b42f-9717bf9a2bbd" clustered="false" name="_pg_foreign_table_columns_pk" physicalName="_pg_foreign_table_columns_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB23" populated="false" UUID="a3efac50-2bfb-4eac-a114-d8c360714e28" name="_pg_foreign_tables" objectType="VIEW" physicalName="_pg_foreign_tables" >
+      <remarks></remarks>
+      <folder id="FOLTAB231" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX24" populated="true" UUID="c0bc04cf-9de5-484b-bb37-50a9a77894bf" clustered="false" name="_pg_foreign_tables_pk" physicalName="_pg_foreign_tables_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB25" populated="false" UUID="38921155-5770-429b-8755-7baf0c961b0d" name="_pg_user_mappings" objectType="VIEW" physicalName="_pg_user_mappings" >
+      <remarks></remarks>
+      <folder id="FOLTAB251" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX26" populated="true" UUID="c59d5ca3-be5e-4c18-af8a-f6bf9e43c426" clustered="false" name="_pg_user_mappings_pk" physicalName="_pg_user_mappings_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB27" populated="false" UUID="c0fa863b-9d0e-4609-af7e-394a3ea3364a" name="administrable_role_authorizations" objectType="VIEW" physicalName="administrable_role_authorizations" >
+      <remarks></remarks>
+      <folder id="FOLTAB271" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX28" populated="true" UUID="3365ad87-8931-48bb-9d98-a4a7b02f5cd1" clustered="false" name="administrable_role_authorizations_pk" physicalName="administrable_role_authorizations_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB29" populated="false" UUID="f1c30eca-95f7-4966-9bb4-c6063f24c9de" name="applicable_roles" objectType="VIEW" physicalName="applicable_roles" >
+      <remarks></remarks>
+      <folder id="FOLTAB291" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX30" populated="true" UUID="337adead-f72e-42b4-87a4-bfb31ab242a5" clustered="false" name="applicable_roles_pk" physicalName="applicable_roles_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB31" populated="false" UUID="cdca6588-913d-4473-b698-e56d642260c3" name="attributes" objectType="VIEW" physicalName="attributes" >
+      <remarks></remarks>
+      <folder id="FOLTAB311" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX32" populated="true" UUID="80e82cda-b956-4ff9-a3d7-499fb76a3deb" clustered="false" name="attributes_pk" physicalName="attributes_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB33" populated="false" UUID="69f7bbb3-577e-4f40-9ed0-3eb974e9e8bb" name="character_sets" objectType="VIEW" physicalName="character_sets" >
+      <remarks></remarks>
+      <folder id="FOLTAB331" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX34" populated="true" UUID="5d1b3140-31c5-45bb-b934-60f96c8f430f" clustered="false" name="character_sets_pk" physicalName="character_sets_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB35" populated="false" UUID="3e32d910-feb1-456a-a581-9917c7966eb6" name="check_constraint_routine_usage" objectType="VIEW" physicalName="check_constraint_routine_usage" >
+      <remarks></remarks>
+      <folder id="FOLTAB351" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX36" populated="true" UUID="b0617c77-860c-441c-80de-f0975a26661e" clustered="false" name="check_constraint_routine_usage_pk" physicalName="check_constraint_routine_usage_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB37" populated="false" UUID="885bfb74-8d49-47f9-a8ed-4ac2e52804ec" name="check_constraints" objectType="VIEW" physicalName="check_constraints" >
+      <remarks></remarks>
+      <folder id="FOLTAB371" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX38" populated="true" UUID="b9c27395-3adf-4b6e-8668-c2077e22c49c" clustered="false" name="check_constraints_pk" physicalName="check_constraints_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB39" populated="false" UUID="c4a266bc-7e74-41cf-aa69-33697f03e49d" name="collation_character_set_applicability" objectType="VIEW" physicalName="collation_character_set_applicability" >
+      <remarks></remarks>
+      <folder id="FOLTAB391" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX40" populated="true" UUID="d3fd865e-14d9-419d-9a83-e923f9c523ad" clustered="false" name="collation_character_set_applicability_pk" physicalName="collation_character_set_applicability_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB41" populated="false" UUID="a06b0aa0-818f-49aa-89b3-4b46fa2732a5" name="collations" objectType="VIEW" physicalName="collations" >
+      <remarks></remarks>
+      <folder id="FOLTAB411" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX42" populated="true" UUID="74def044-0b4e-4b29-b072-cf91dd100ac0" clustered="false" name="collations_pk" physicalName="collations_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB43" populated="false" UUID="270da5d9-395c-4fab-8a5b-46a5e4683e82" name="column_column_usage" objectType="VIEW" physicalName="column_column_usage" >
+      <remarks></remarks>
+      <folder id="FOLTAB431" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX44" populated="true" UUID="5c5e22e4-0b69-4bb8-bbd5-ad65afe73c90" clustered="false" name="column_column_usage_pk" physicalName="column_column_usage_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB45" populated="false" UUID="a48bb90e-9963-48e6-b0c2-32f988a440b8" name="column_domain_usage" objectType="VIEW" physicalName="column_domain_usage" >
+      <remarks></remarks>
+      <folder id="FOLTAB451" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX46" populated="true" UUID="60e4a3ca-7654-4734-b07a-fb38088e84ad" clustered="false" name="column_domain_usage_pk" physicalName="column_domain_usage_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB47" populated="false" UUID="caf4836b-6965-4395-aac4-998e84630052" name="column_options" objectType="VIEW" physicalName="column_options" >
+      <remarks></remarks>
+      <folder id="FOLTAB471" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX48" populated="true" UUID="8cea5afd-93ad-4b5c-b6d2-30af628ce368" clustered="false" name="column_options_pk" physicalName="column_options_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB49" populated="false" UUID="a794da54-3fda-40c1-ae82-c45dede64c59" name="column_privileges" objectType="VIEW" physicalName="column_privileges" >
+      <remarks></remarks>
+      <folder id="FOLTAB491" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX50" populated="true" UUID="53ef7b3a-be78-48e6-8d8f-64e8b971ccf9" clustered="false" name="column_privileges_pk" physicalName="column_privileges_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB51" populated="false" UUID="dd6dca50-9c7c-465a-8e23-1e7bb32e81c0" name="column_udt_usage" objectType="VIEW" physicalName="column_udt_usage" >
+      <remarks></remarks>
+      <folder id="FOLTAB511" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX52" populated="true" UUID="a7f7998c-492c-4e48-87c1-42bed8e3836a" clustered="false" name="column_udt_usage_pk" physicalName="column_udt_usage_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB53" populated="false" UUID="5bbda9bb-aa47-4b6b-9f04-d4363961a63f" name="columns" objectType="VIEW" physicalName="columns" >
+      <remarks></remarks>
+      <folder id="FOLTAB531" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX54" populated="true" UUID="ce865d5a-9ea2-480b-8403-4bd53f70b527" clustered="false" name="columns_pk" physicalName="columns_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB55" populated="false" UUID="4ec38ad0-2089-455c-816d-f22d508422ea" name="constraint_column_usage" objectType="VIEW" physicalName="constraint_column_usage" >
+      <remarks></remarks>
+      <folder id="FOLTAB551" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX56" populated="true" UUID="78baa201-0773-4eb5-8298-3b9b4f601bd3" clustered="false" name="constraint_column_usage_pk" physicalName="constraint_column_usage_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB57" populated="false" UUID="c8caaecd-eec2-4335-8018-aafe77f65248" name="constraint_table_usage" objectType="VIEW" physicalName="constraint_table_usage" >
+      <remarks></remarks>
+      <folder id="FOLTAB571" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX58" populated="true" UUID="0c3fb1a1-ea88-4312-a080-f0a3b0c7eef0" clustered="false" name="constraint_table_usage_pk" physicalName="constraint_table_usage_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB59" populated="false" UUID="98262143-4f73-4575-8fc4-ecbfbc304503" name="data_type_privileges" objectType="VIEW" physicalName="data_type_privileges" >
+      <remarks></remarks>
+      <folder id="FOLTAB591" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX60" populated="true" UUID="a8b8d4b3-d241-41c7-a006-813729c6ae67" clustered="false" name="data_type_privileges_pk" physicalName="data_type_privileges_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB61" populated="false" UUID="e4510fd0-0f3c-4915-a9dd-8fdde5d90f39" name="domain_constraints" objectType="VIEW" physicalName="domain_constraints" >
+      <remarks></remarks>
+      <folder id="FOLTAB611" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX62" populated="true" UUID="dfe67195-27e5-421e-937a-97a028773765" clustered="false" name="domain_constraints_pk" physicalName="domain_constraints_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB63" populated="false" UUID="9b6d1887-0a5a-44be-9587-4ebefb08d3bb" name="domain_udt_usage" objectType="VIEW" physicalName="domain_udt_usage" >
+      <remarks></remarks>
+      <folder id="FOLTAB631" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX64" populated="true" UUID="a4235924-1e08-49ef-82d9-38036b5d7da7" clustered="false" name="domain_udt_usage_pk" physicalName="domain_udt_usage_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB65" populated="false" UUID="22fca45d-af3f-4cb7-b86e-0a8e552fb170" name="domains" objectType="VIEW" physicalName="domains" >
+      <remarks></remarks>
+      <folder id="FOLTAB651" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX66" populated="true" UUID="4343b9db-714f-4acc-83ff-ea8a0760e992" clustered="false" name="domains_pk" physicalName="domains_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB67" populated="false" UUID="792d4350-b1f3-4c45-af59-0ae98b4c5a0f" name="element_types" objectType="VIEW" physicalName="element_types" >
+      <remarks></remarks>
+      <folder id="FOLTAB671" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX68" populated="true" UUID="f583f8b1-1145-4afd-a97a-e6290280bacc" clustered="false" name="element_types_pk" physicalName="element_types_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB69" populated="false" UUID="6b078173-3f6b-432b-a03b-584d2cf2a136" name="enabled_roles" objectType="VIEW" physicalName="enabled_roles" >
+      <remarks></remarks>
+      <folder id="FOLTAB691" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX70" populated="true" UUID="d5df422f-0d85-442f-988d-a301ed262f35" clustered="false" name="enabled_roles_pk" physicalName="enabled_roles_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB71" populated="false" UUID="1d8f3589-0839-4b74-86b9-87aa8324360c" name="foreign_data_wrapper_options" objectType="VIEW" physicalName="foreign_data_wrapper_options" >
+      <remarks></remarks>
+      <folder id="FOLTAB711" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX72" populated="true" UUID="d84a1a79-48cd-43cf-a24b-6870542ce3ad" clustered="false" name="foreign_data_wrapper_options_pk" physicalName="foreign_data_wrapper_options_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB73" populated="false" UUID="e6d7bc02-75d7-4174-9112-7290237f0ff4" name="foreign_data_wrappers" objectType="VIEW" physicalName="foreign_data_wrappers" >
+      <remarks></remarks>
+      <folder id="FOLTAB731" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX74" populated="true" UUID="efa1bc57-ff41-44d0-ac12-4c5d79decec1" clustered="false" name="foreign_data_wrappers_pk" physicalName="foreign_data_wrappers_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB75" populated="false" UUID="3e96215e-4bf7-4930-b8b0-45015f9ac9d9" name="foreign_server_options" objectType="VIEW" physicalName="foreign_server_options" >
+      <remarks></remarks>
+      <folder id="FOLTAB751" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX76" populated="true" UUID="c441a76f-4802-414c-823b-107b039b8cd1" clustered="false" name="foreign_server_options_pk" physicalName="foreign_server_options_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB77" populated="false" UUID="24beec87-205b-49c3-972e-732caa4977f7" name="foreign_servers" objectType="VIEW" physicalName="foreign_servers" >
+      <remarks></remarks>
+      <folder id="FOLTAB771" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX78" populated="true" UUID="0a60a191-9067-4e8f-9334-db92272cf039" clustered="false" name="foreign_servers_pk" physicalName="foreign_servers_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB79" populated="false" UUID="55baa999-1ecd-4b78-b9f3-79e961230108" name="foreign_table_options" objectType="VIEW" physicalName="foreign_table_options" >
+      <remarks></remarks>
+      <folder id="FOLTAB791" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX80" populated="true" UUID="585213b8-887a-485e-8614-938714865599" clustered="false" name="foreign_table_options_pk" physicalName="foreign_table_options_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB81" populated="false" UUID="f72d0524-679e-4e72-96f0-8bd39726b013" name="foreign_tables" objectType="VIEW" physicalName="foreign_tables" >
+      <remarks></remarks>
+      <folder id="FOLTAB811" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX82" populated="true" UUID="84ae6236-9af0-47e3-89b0-e251d6ae4680" clustered="false" name="foreign_tables_pk" physicalName="foreign_tables_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB83" populated="false" UUID="ff25643c-a8d1-4c06-b2a3-29a627f2c16d" name="information_schema_catalog_name" objectType="VIEW" physicalName="information_schema_catalog_name" >
+      <remarks></remarks>
+      <folder id="FOLTAB831" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX84" populated="true" UUID="fef0bef7-1398-454b-bcb8-8fad17b9a318" clustered="false" name="information_schema_catalog_name_pk" physicalName="information_schema_catalog_name_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB85" populated="false" UUID="9b5db32b-7c03-43f6-898f-67da28e90f50" name="key_column_usage" objectType="VIEW" physicalName="key_column_usage" >
+      <remarks></remarks>
+      <folder id="FOLTAB851" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX86" populated="true" UUID="305ba115-4c09-44e2-ba75-862bf1b7757a" clustered="false" name="key_column_usage_pk" physicalName="key_column_usage_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB87" populated="false" UUID="e7debf0d-69c6-4f8e-928f-bf2fb87234b1" name="parameters" objectType="VIEW" physicalName="parameters" >
+      <remarks></remarks>
+      <folder id="FOLTAB871" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX88" populated="true" UUID="8aa2c8f4-583e-424f-8ac9-0c1253f25cb3" clustered="false" name="parameters_pk" physicalName="parameters_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB89" populated="false" UUID="8468e545-28b6-48d2-b506-e1d730dbc8d6" name="referential_constraints" objectType="VIEW" physicalName="referential_constraints" >
+      <remarks></remarks>
+      <folder id="FOLTAB891" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX90" populated="true" UUID="c19a5e30-473d-4f4c-9493-62b1badff577" clustered="false" name="referential_constraints_pk" physicalName="referential_constraints_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB91" populated="false" UUID="8ac866e3-57e6-4108-b696-7c87fd1dd11e" name="role_column_grants" objectType="VIEW" physicalName="role_column_grants" >
+      <remarks></remarks>
+      <folder id="FOLTAB911" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX92" populated="true" UUID="3224314f-8ce2-4ccc-90a3-9345cf00f2bb" clustered="false" name="role_column_grants_pk" physicalName="role_column_grants_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB93" populated="false" UUID="f91888b9-9699-4688-8bec-2b3de3a4f0a1" name="role_routine_grants" objectType="VIEW" physicalName="role_routine_grants" >
+      <remarks></remarks>
+      <folder id="FOLTAB931" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX94" populated="true" UUID="600ad4af-11e5-4f78-9b26-e460a44acdb7" clustered="false" name="role_routine_grants_pk" physicalName="role_routine_grants_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB95" populated="false" UUID="378bccfa-04d9-4ff8-a60b-738adc5017f5" name="role_table_grants" objectType="VIEW" physicalName="role_table_grants" >
+      <remarks></remarks>
+      <folder id="FOLTAB951" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX96" populated="true" UUID="2d579af7-88db-45fe-ac2e-c0dc76c070d4" clustered="false" name="role_table_grants_pk" physicalName="role_table_grants_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB97" populated="false" UUID="827c5414-c466-4db0-a0ac-7340d6bdabcd" name="role_udt_grants" objectType="VIEW" physicalName="role_udt_grants" >
+      <remarks></remarks>
+      <folder id="FOLTAB971" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX98" populated="true" UUID="545c2bf4-aa94-4140-8cf1-3e52c2646aaa" clustered="false" name="role_udt_grants_pk" physicalName="role_udt_grants_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB99" populated="false" UUID="43ba8020-1a87-400b-a8b7-d3ad19ec3c7f" name="role_usage_grants" objectType="VIEW" physicalName="role_usage_grants" >
+      <remarks></remarks>
+      <folder id="FOLTAB991" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX100" populated="true" UUID="0fb58a5e-0803-46bc-80d6-d540acb32542" clustered="false" name="role_usage_grants_pk" physicalName="role_usage_grants_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB101" populated="false" UUID="4b6b6c58-7eca-4094-a28b-3b6c9ec16f00" name="routine_privileges" objectType="VIEW" physicalName="routine_privileges" >
+      <remarks></remarks>
+      <folder id="FOLTAB1011" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX102" populated="true" UUID="ab0b01f7-13e2-48a1-8f56-ef86956e8e77" clustered="false" name="routine_privileges_pk" physicalName="routine_privileges_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB103" populated="false" UUID="fe913d4e-f791-407c-b5b2-6bf9634559a1" name="routines" objectType="VIEW" physicalName="routines" >
+      <remarks></remarks>
+      <folder id="FOLTAB1031" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX104" populated="true" UUID="64d9f023-e0f2-4227-9c1c-cf39dec74c43" clustered="false" name="routines_pk" physicalName="routines_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB105" populated="false" UUID="e95c207a-a611-49fd-8573-9a13a48ee894" name="schemata" objectType="VIEW" physicalName="schemata" >
+      <remarks></remarks>
+      <folder id="FOLTAB1051" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX106" populated="true" UUID="2dedff4c-06cd-4ea9-b513-df6e827603bd" clustered="false" name="schemata_pk" physicalName="schemata_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB107" populated="false" UUID="67ac63de-4247-44f4-b101-e435b0c018e3" name="sequences" objectType="VIEW" physicalName="sequences" >
+      <remarks></remarks>
+      <folder id="FOLTAB1071" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX108" populated="true" UUID="08626f37-81b2-46f0-b85c-cd67b4020b69" clustered="false" name="sequences_pk" physicalName="sequences_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB109" populated="false" UUID="b6e02fb6-bd17-4e2d-9d9a-6dd2cd513ae5" name="table_constraints" objectType="VIEW" physicalName="table_constraints" >
+      <remarks></remarks>
+      <folder id="FOLTAB1091" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX110" populated="true" UUID="d524059b-2ae3-4b60-ac94-b5636edda988" clustered="false" name="table_constraints_pk" physicalName="table_constraints_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB111" populated="false" UUID="44e9526e-ea7d-46a7-a8d8-411ca68ce382" name="table_privileges" objectType="VIEW" physicalName="table_privileges" >
+      <remarks></remarks>
+      <folder id="FOLTAB1111" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX112" populated="true" UUID="daa79efd-6493-4778-9ac8-6527148caff6" clustered="false" name="table_privileges_pk" physicalName="table_privileges_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB113" populated="false" UUID="dc421d8a-dbe3-44ea-9950-327159c55f53" name="tables" objectType="VIEW" physicalName="tables" >
+      <remarks></remarks>
+      <folder id="FOLTAB1131" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX114" populated="true" UUID="27273cba-915d-48a9-8495-57170aaf95a9" clustered="false" name="tables_pk" physicalName="tables_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB115" populated="false" UUID="9d858d8d-7a6e-4a16-b4d6-55ef1d5ea047" name="transforms" objectType="VIEW" physicalName="transforms" >
+      <remarks></remarks>
+      <folder id="FOLTAB1151" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX116" populated="true" UUID="f1dd2ba8-b811-4a38-a1f6-fee79e173e73" clustered="false" name="transforms_pk" physicalName="transforms_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB117" populated="false" UUID="4e4925d8-dfea-4d83-9303-f99c01786923" name="triggered_update_columns" objectType="VIEW" physicalName="triggered_update_columns" >
+      <remarks></remarks>
+      <folder id="FOLTAB1171" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX118" populated="true" UUID="bf7a1afd-3658-4ec4-9717-221f67695163" clustered="false" name="triggered_update_columns_pk" physicalName="triggered_update_columns_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB119" populated="false" UUID="68f6f991-d7c9-43ba-a991-3a7fea07e3d1" name="triggers" objectType="VIEW" physicalName="triggers" >
+      <remarks></remarks>
+      <folder id="FOLTAB1191" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX120" populated="true" UUID="d9287435-09d9-4f9a-a3f1-50a2d00e3aca" clustered="false" name="triggers_pk" physicalName="triggers_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB121" populated="false" UUID="f9b2710f-32a4-48cb-9450-e4dd228ba39a" name="udt_privileges" objectType="VIEW" physicalName="udt_privileges" >
+      <remarks></remarks>
+      <folder id="FOLTAB1211" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX122" populated="true" UUID="24e4990a-535b-4d9e-b355-259295d13fbe" clustered="false" name="udt_privileges_pk" physicalName="udt_privileges_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB123" populated="false" UUID="4f141aef-070a-435b-b861-4c978bd782f9" name="usage_privileges" objectType="VIEW" physicalName="usage_privileges" >
+      <remarks></remarks>
+      <folder id="FOLTAB1231" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX124" populated="true" UUID="2a1defd5-f515-42a6-adc8-b233d0e0e583" clustered="false" name="usage_privileges_pk" physicalName="usage_privileges_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB125" populated="false" UUID="d3b3c5df-656a-4017-8d82-3a85ca788140" name="user_defined_types" objectType="VIEW" physicalName="user_defined_types" >
+      <remarks></remarks>
+      <folder id="FOLTAB1251" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX126" populated="true" UUID="5a71e55b-b9d0-41b7-9a46-12a10d1e698f" clustered="false" name="user_defined_types_pk" physicalName="user_defined_types_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB127" populated="false" UUID="dd596fb9-4b2c-41b6-9fa8-091726df2244" name="user_mapping_options" objectType="VIEW" physicalName="user_mapping_options" >
+      <remarks></remarks>
+      <folder id="FOLTAB1271" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX128" populated="true" UUID="d3db120f-9fe8-4566-9cfa-3f71dca8f631" clustered="false" name="user_mapping_options_pk" physicalName="user_mapping_options_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB129" populated="false" UUID="b11e8d0f-689a-4a9f-ba19-66adf66bf343" name="user_mappings" objectType="VIEW" physicalName="user_mappings" >
+      <remarks></remarks>
+      <folder id="FOLTAB1291" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX130" populated="true" UUID="5b318050-588a-40b1-8bd3-58e02b4180a0" clustered="false" name="user_mappings_pk" physicalName="user_mappings_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB131" populated="false" UUID="a2799aa5-4cc4-41b8-ae73-0497aaf3de24" name="view_column_usage" objectType="VIEW" physicalName="view_column_usage" >
+      <remarks></remarks>
+      <folder id="FOLTAB1311" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX132" populated="true" UUID="c8d65e59-84c7-44a6-993d-ac0e918442a7" clustered="false" name="view_column_usage_pk" physicalName="view_column_usage_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB133" populated="false" UUID="aec695a1-1725-476d-ab47-7cff8b286f19" name="view_routine_usage" objectType="VIEW" physicalName="view_routine_usage" >
+      <remarks></remarks>
+      <folder id="FOLTAB1331" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX134" populated="true" UUID="2de7a531-a4bb-4efc-a9b9-6e8727a3b773" clustered="false" name="view_routine_usage_pk" physicalName="view_routine_usage_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB135" populated="false" UUID="398a5cef-1d6e-4183-a4db-791904f2d9c3" name="view_table_usage" objectType="VIEW" physicalName="view_table_usage" >
+      <remarks></remarks>
+      <folder id="FOLTAB1351" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX136" populated="true" UUID="a06a5c39-679d-4aae-a041-e72af3be8977" clustered="false" name="view_table_usage_pk" physicalName="view_table_usage_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB137" populated="false" UUID="1a7e8da5-0f6a-4f49-8569-33aa6e582760" name="views" objectType="VIEW" physicalName="views" >
+      <remarks></remarks>
+      <folder id="FOLTAB1371" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX138" populated="true" UUID="873b256c-71f2-4e81-a353-465a8793ed1f" clustered="false" name="views_pk" physicalName="views_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+    </schema>
+   </catalog>
+   <relationships>
+   </relationships>
+  </database>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB140" populated="true" UUID="c9ec3a04-c590-4d74-ac74-205f810ac9b4" name="senado_cad_folha" objectType="TABLE" physicalName="senado_cad_folha" >
+   <remarks>Tabela que armazena dados sobre o tipo de folha de pagamento.</remarks>
+   <folder id="FOLTAB1401" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL141" populated="true" UUID="3324d3b9-2c9d-41d2-979a-2568da1f8409" autoIncrement="false" autoIncrementSequenceName="senado_cad_folha_cod_tipo_folha_seq" defaultValue="" name="cod_tipo_folha" nullable="0" physicalName="cod_tipo_folha" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL142" populated="true" UUID="663bcba6-b99b-4984-bac5-8dc02068433d" autoIncrement="false" autoIncrementSequenceName="senado_cad_folha_tipo_folha_seq" defaultValue="" name="tipo_folha" nullable="0" physicalName="tipo_folha" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1403" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1402" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1404" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX143" populated="true" UUID="90adbb2f-78da-474c-8203-0bd7f2d202a6" clustered="false" name="pk_cod_tipo_folha" physicalName="pk_cod_tipo_folha" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC144" populated="true" UUID="a75f3525-11f0-43d9-ab82-62383f476929" ascendingOrDescending="UNSPECIFIED" column-ref="COL141" name="cod_tipo_folha" physicalName="cod_tipo_folha" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB145" populated="true" UUID="bf0626c5-55b3-42f9-9888-9542f9cd6bee" name="senado_remuneracao" objectType="TABLE" physicalName="senado_remuneracao" >
+   <remarks>Tabela que armazena dados sobre a remuneração de senadores, funcionários do senado e comissionados.</remarks>
+   <folder id="FOLTAB1451" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL146" populated="true" UUID="3107ec96-2389-402e-9b03-91ec2ee8d447" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_cod_pagto_seq" defaultValue="" name="cod_pagto" nullable="0" physicalName="cod_pagto" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL147" populated="true" UUID="59a49d9a-9324-4dd8-9866-fe8cc50d816b" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_periodo_seq" defaultValue="" name="periodo" nullable="0" physicalName="periodo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL148" populated="true" UUID="40375e5b-a0fa-4a79-b50d-2050386b996d" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_data_pgto_seq" defaultValue="" name="data_pagto" nullable="0" physicalName="data_pgto" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL149" populated="true" UUID="a50a8cdd-3c6c-42ba-8050-3d75808ed9e1" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_cod_tipo_despesa_seq" defaultValue="" name="cod_tipo_despesa" nullable="0" physicalName="cod_tipo_despesa" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL150" populated="true" UUID="a9888a5b-6cba-4b88-841c-6721b602b1ae" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_cod_func_categoria_seq" defaultValue="" name="cod_func_categoria" nullable="0" physicalName="cod_func_categoria" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL151" populated="true" UUID="4413f1ec-4ed8-4930-a3c8-c2ede601636e" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_cod_func_cargo_seq" defaultValue="" name="cod_func_cargo" nullable="1" physicalName="cod_func_cargo" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL152" populated="true" UUID="0c50428e-f2a7-4533-9a21-e4c57cd742ed" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_cod_senador_seq" defaultValue="" name="cod_senador" nullable="0" physicalName="cod_senador" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL153" populated="true" UUID="7a770de7-e209-43ee-94d0-e0f28daee415" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_cod_local_exercicio_seq" defaultValue="" name="cod_local_exercicio" nullable="0" physicalName="cod_local_exercicio" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL154" populated="true" UUID="eb9c73c8-93ee-48c4-a828-36a973d53348" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_cod_tipo_folha_seq" defaultValue="" name="cod_tipo_folha" nullable="0" physicalName="cod_tipo_folha" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL155" populated="true" UUID="cf35bc30-6e03-431b-b816-958b0187a475" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_vb_remuneracao_basica_seq" defaultValue="" name="vb_remuneracao_basica" nullable="1" physicalName="vb_remuneracao_basica" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL156" populated="true" UUID="6d2440a1-c6e2-422d-9f15-b884879f733c" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_vb_vantagens_pessoais_seq" defaultValue="" name="vb_vantagens_pessoais" nullable="1" physicalName="vb_vantagens_pessoais" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL157" populated="true" UUID="7b0f2dd1-83a0-4158-9951-ef9990b56f5a" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_vb_funcao_comissionada_seq" defaultValue="" name="vb_funcao_comissionada" nullable="1" physicalName="vb_funcao_comissionada" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL158" populated="true" UUID="759d48b0-76ba-47c3-87ec-5f07dd65e938" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_vb_gratificacao_natalina_seq" defaultValue="" name="vb_gratificacao_natalina" nullable="1" physicalName="vb_gratificacao_natalina" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL159" populated="true" UUID="3b9e1c5f-f90b-47fa-bd07-023033b594a6" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_vb_horas_extras_seq" defaultValue="" name="vb_horas_extras" nullable="1" physicalName="vb_horas_extras" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL160" populated="true" UUID="c2eac878-ba0d-4823-8ab3-6729fa9173f8" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_vb_outras_eventuais_seq" defaultValue="" name="vb_outras_eventuais" nullable="1" physicalName="vb_outras_eventuais" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL161" populated="true" UUID="e2e86931-ffe6-4c23-a9f4-dbb626829528" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_vb_abono_permanencia_seq" defaultValue="" name="vb_abono_permanencia" nullable="1" physicalName="vb_abono_permanencia" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL162" populated="true" UUID="b729317e-5ac6-4cb7-adde-4fdafe06571b" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_vb_diarias_seq" defaultValue="" name="vb_diarias" nullable="1" physicalName="vb_diarias" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL163" populated="true" UUID="a6583bea-8ad3-427c-b58a-1ab36f5dd1cb" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_vb_auxilios_seq" defaultValue="" name="vb_auxilios" nullable="1" physicalName="vb_auxilios" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL164" populated="true" UUID="d059f6d2-6432-4bf0-a486-f58a39d8274b" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_vb_vantagens_indenizatorias_seq" defaultValue="" name="vb_vantagens_indenizatorias" nullable="1" physicalName="vb_vantagens_indenizatorias" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL165" populated="true" UUID="e9d81634-c6d5-4e85-ad8c-3fdbd4316462" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_d_reversao_teto_constitucional_seq" defaultValue="" name="d_reversao_teto_constitucional" nullable="1" physicalName="d_reversao_teto_constitucional" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL166" populated="true" UUID="bbf28540-2bf4-4175-a3e4-f2f301379c9a" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_d_imposto_renda_seq" defaultValue="" name="d_imposto_renda" nullable="1" physicalName="d_imposto_renda" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL167" populated="true" UUID="0aac5149-8bee-48f9-81c8-edfc34cd57f6" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_d_previdencia_seq" defaultValue="" name="d_previdencia" nullable="1" physicalName="d_previdencia" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL168" populated="true" UUID="742a3f6b-1efd-4366-b497-904cc838bd23" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_d_faltas_seq" defaultValue="" name="d_faltas" nullable="1" physicalName="d_faltas" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL169" populated="true" UUID="869bdbc7-6873-45ba-be31-92953b0c0396" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_bruto_seq" defaultValue="" name="bruto" nullable="0" physicalName="bruto" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Atributo cujo o valor é o somatório dos campos abaixo, todos com &quot;vb&quot;(valor bruto) na frente
+
+vb_remuneracao_basica
+vb_vantagens_pessoais
+vb_funcao_comissionada
+vb_gratificacao_natalina
+vb_horas_extras
+vb_outras_eventuais
+vb_abono_permanencia
+vb_diarias
+vb_auxilios
+vb_vantagens_indenizatorias</remarks>
+    </column>
+    <column id="COL170" populated="true" UUID="c9d84c29-ac93-4536-9cd2-e66373d1d9ec" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_descontos_seq" defaultValue="" name="descontos" nullable="0" physicalName="descontos" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Atributo cujo o valor é o somatório dos campos abaixo, todos com &quot;d&quot;(desconto) na frente:
+
+d_reversao_teto_constitucional
+d_imposto_renda
+d_previdencia
+d_faltas</remarks>
+    </column>
+    <column id="COL171" populated="true" UUID="ddd026f9-9002-49c7-8322-a2cc98615043" autoIncrement="false" autoIncrementSequenceName="senado_remuneracao_liquido_seq" defaultValue="" name="liquido" nullable="0" physicalName="liquido" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Atributo cujo o valor é a diferença entre o valor bruto e os descontos.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1453" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1452" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1454" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX172" populated="true" UUID="ff503796-8b5c-413f-bad2-e15a606e3bc6" clustered="false" name="pk_cod_remuneracao" physicalName="pk_cod_remuneracao" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC173" populated="true" UUID="975a1d71-19f6-40a6-b740-5a1de4471bbc" ascendingOrDescending="UNSPECIFIED" column-ref="COL146" name="cod_pagto" physicalName="cod_pagto" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB174" populated="true" UUID="7cb330a2-3be0-43f8-bc51-a57a7d2193c4" name="senado_cad_func_local_exercicio" objectType="TABLE" physicalName="senado_cad_func_local_exercicio" >
+   <remarks>Tabela que armazena dados sobre os locais onde são exercidas as atividades dos funcionários que trabalham para os senadores.</remarks>
+   <folder id="FOLTAB1741" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL175" populated="true" UUID="450f5bd7-1d28-41fd-a147-d557c3da9a90" autoIncrement="false" autoIncrementSequenceName="senado_cad_func_local_exercicio_cod_local_exercicio_seq" defaultValue="" name="cod_local_exercicio" nullable="0" physicalName="cod_local_exercicio" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL176" populated="true" UUID="cdc61a6b-3dff-48fc-bb1c-1a93f26ab8fb" autoIncrement="false" autoIncrementSequenceName="senado_cad_func_local_exercicio_local_exercicio_seq" defaultValue="" name="local_exercicio" nullable="0" physicalName="local_exercicio" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1743" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1742" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1744" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX177" populated="true" UUID="e65db2b5-f6bd-4b1c-8183-adcda8f7732a" clustered="false" name="pk_cod_local_exercicio" physicalName="pk_cod_local_exercicio" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC178" populated="true" UUID="cc78dfde-0a80-466a-81f5-b8edbb0ff191" ascendingOrDescending="UNSPECIFIED" column-ref="COL175" name="cod_local_exercicio" physicalName="cod_local_exercicio" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB179" populated="true" UUID="65dec5bb-477d-4a9f-82d8-e112d4fadb64" name="senado_cad_func_cargos" objectType="TABLE" physicalName="senado_cad_func_cargos" >
+   <remarks>Tabela que armazena dados sobre os tipos de cargos dos funcionários que trabalham para os senadores.</remarks>
+   <folder id="FOLTAB1791" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL180" populated="true" UUID="e3e4f753-0c28-4d30-ade1-a031f7f9db3a" autoIncrement="false" autoIncrementSequenceName="senado_cad_func_cargos_cod_func_cargo_seq" defaultValue="" name="cod_func_cargo" nullable="0" physicalName="cod_func_cargo" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL181" populated="true" UUID="4dc61a35-535a-4eb2-8ad1-b80bdf179a08" autoIncrement="false" autoIncrementSequenceName="senado_cad_func_cargos_func_cargo_seq" defaultValue="" name="func_cargo" nullable="0" physicalName="func_cargo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1793" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1792" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1794" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX182" populated="true" UUID="9b1f37aa-c756-4406-a0c0-0dce441bf467" clustered="false" name="pk_cod_func_cargo" physicalName="pk_cod_func_cargo" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC183" populated="true" UUID="263d2572-73ad-4297-adca-9f15d3ae027d" ascendingOrDescending="UNSPECIFIED" column-ref="COL180" name="cod_func_cargo" physicalName="cod_func_cargo" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB184" populated="true" UUID="4f9117d6-1f34-4bcf-bf7f-39457b1733d8" name="senado_cad_senadores" objectType="TABLE" physicalName="senado_cad_senadores" >
+   <remarks>Tabela que armazena dados sobre o cadastro de senadores.</remarks>
+   <folder id="FOLTAB1841" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL185" populated="true" UUID="48c93d0d-b7d0-445c-9401-98dba7559e84" autoIncrement="false" autoIncrementSequenceName="senado_cad_senadores_cod_senador_seq" defaultValue="" name="cod_senador" nullable="0" physicalName="cod_senador" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL186" populated="true" UUID="897b7166-728c-42e8-a367-ee1c19ed3247" autoIncrement="false" autoIncrementSequenceName="senado_cad_senadores_nome_senador_seq" defaultValue="" name="nome_senador" nullable="0" physicalName="nome_senador" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL187" populated="true" UUID="f66a2e16-61dd-41e5-b705-171a157be4e6" autoIncrement="false" autoIncrementSequenceName="senado_cad_senadores_situacao_seq" defaultValue="" name="situacao" nullable="0" physicalName="situacao" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL188" populated="true" UUID="cd3fc0fe-1966-4d80-84be-15f9cbb85cde" autoIncrement="false" autoIncrementSequenceName="senado_cad_senadores_partido_seq" defaultValue="" name="partido" nullable="1" physicalName="partido" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL189" populated="true" UUID="10c041e3-de3c-466b-a2f6-78865c4f94a9" autoIncrement="false" autoIncrementSequenceName="senado_cad_senadores_uf_seq" defaultValue="" name="uf" nullable="0" physicalName="uf" precision="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Este atributo informa sobre o estado pelo qual o parlamentar foi eleito, não informa sobre o estado de nascimento.</remarks>
+    </column>
+    <column id="COL190" populated="true" UUID="774315a7-b864-41af-9f30-42b73285bd31" autoIncrement="false" autoIncrementSequenceName="senado_cad_senadores_mandato_seq" defaultValue="" name="mandato" nullable="1" physicalName="mandato" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL191" populated="true" UUID="8a91b0b5-fb62-43c7-a818-e8ce2bd372f4" autoIncrement="false" autoIncrementSequenceName="senado_cad_senadores_titularidade_seq" defaultValue="" name="titularidade" nullable="1" physicalName="titularidade" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL192" populated="true" UUID="d74f1a77-9d7e-44b9-ad69-828070cfc9e3" autoIncrement="false" autoIncrementSequenceName="senado_cad_senadores_telefone_seq" defaultValue="" name="telefone" nullable="1" physicalName="telefone" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL193" populated="true" UUID="3171e34b-a4e6-429a-a3ea-60d697b0aa00" autoIncrement="false" autoIncrementSequenceName="senado_cad_senadores_data_nascimento_seq" defaultValue="" name="data_nascimento" nullable="1" physicalName="data_nascimento" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL194" populated="true" UUID="91357484-4bed-4dbb-bd89-f54e03cf6356" autoIncrement="false" autoIncrementSequenceName="senado_cad_senadores_email_seq" defaultValue="" name="email" nullable="1" physicalName="email" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL195" populated="true" UUID="80f1a10d-d441-4107-8d0e-549a7f2f3487" autoIncrement="false" autoIncrementSequenceName="senado_cad_senadores_chefe_gabinete_seq" defaultValue="" name="chefe_gabinete" nullable="1" physicalName="chefe_gabinete" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL196" populated="true" UUID="088d53ae-ee06-4e34-92d8-e738e464421f" autoIncrement="false" autoIncrementSequenceName="senado_cad_senadores_endereco_seq" defaultValue="" name="endereco" nullable="1" physicalName="endereco" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL197" populated="true" UUID="6cc56b5d-d2ed-4595-8e0e-aa966a099d60" autoIncrement="false" autoIncrementSequenceName="senado_cad_senadores_auxilio_moradia_seq" defaultValue="" name="auxilio_moradia" nullable="1" physicalName="auxilio_moradia" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1843" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1842" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1844" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX198" populated="true" UUID="3b7da0e4-29dd-42dd-b9b5-48be54461577" clustered="false" name="pk_cod_senador" physicalName="pk_cod_senador" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC199" populated="true" UUID="8a175431-6093-4983-80a2-240872fc0af4" ascendingOrDescending="UNSPECIFIED" column-ref="COL185" name="cod_senador" physicalName="cod_senador" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB200" populated="true" UUID="1e876586-4149-4035-a2bc-917fae9ae793" name="senado_cad_func_categoria" objectType="TABLE" physicalName="senado_cad_func_categoria" >
+   <remarks>Tabela que armazena dados sobre as categorias de funcionários. A categoria tem relação com a remuneração e despesas diversas.</remarks>
+   <folder id="FOLTAB2001" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL201" populated="true" UUID="26773d19-d69d-4929-a619-382edf9d48de" autoIncrement="false" autoIncrementSequenceName="senado_cad_func_categoria_cod_func_categoria_seq" defaultValue="" name="cod_func_categoria" nullable="0" physicalName="cod_func_categoria" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL202" populated="true" UUID="35c64669-af76-427e-a636-69523bbc35eb" autoIncrement="false" autoIncrementSequenceName="senado_cad_func_categoria_cod_tipo_despesa_seq" defaultValue="" name="cod_tipo_despesa" nullable="0" physicalName="cod_tipo_despesa" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL203" populated="true" UUID="4bd7fc74-cf06-4191-8b53-a19631a2a6e8" autoIncrement="false" autoIncrementSequenceName="senado_cad_func_categoria_func_categoria_seq" defaultValue="" name="func_categoria" nullable="0" physicalName="func_categoria" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB2003" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB2002" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB2004" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX204" populated="true" UUID="0a99a820-27ef-4dd4-9cb4-67a7f58e1071" clustered="false" name="pk_cod_func_categoria" physicalName="pk_cod_func_categoria" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC205" populated="true" UUID="d50d1c59-719d-4000-88cb-c060ff47dc4d" ascendingOrDescending="UNSPECIFIED" column-ref="COL201" name="cod_func_categoria" physicalName="cod_func_categoria" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB206" populated="true" UUID="2b1fa97a-6a7d-4eab-a4a7-76fa81491df0" name="senado_cad_tipo_despesas" objectType="TABLE" physicalName="senado_cad_tipo_despesas" >
+   <remarks>Tabela que armazena dados sobre os tipos de despesas relacionados as atividades dos senadores.</remarks>
+   <folder id="FOLTAB2061" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL207" populated="true" UUID="83fb464b-2bc8-412f-8b1c-65050316ffe2" autoIncrement="false" autoIncrementSequenceName="senado_cad_tipo_despesas_cod_tipo_despesa_seq" defaultValue="" name="cod_tipo_despesa" nullable="0" physicalName="cod_tipo_despesa" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL208" populated="true" UUID="b0000ca0-981c-42fc-ab38-81de024195d7" autoIncrement="false" autoIncrementSequenceName="senado_cad_tipo_despesas_cod_grupo_despesa_seq" defaultValue="" name="cod_grupo_despesa" nullable="0" physicalName="cod_grupo_despesa" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL209" populated="true" UUID="5fbf41a0-884a-4edf-bd90-d5eaeee155d4" autoIncrement="false" autoIncrementSequenceName="senado_cad_tipo_despesas_despesa_descricao_seq" defaultValue="" name="despesa_descricao" nullable="0" physicalName="despesa_descricao" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB2063" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB2062" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB2064" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX210" populated="true" UUID="1503ab4b-b3b1-4231-8bc1-bbf002dcd30e" clustered="false" name="pk_senado_cad_tipo_despesas" physicalName="pk_senado_cad_tipo_despesas" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC211" populated="true" UUID="a7f4da0b-2130-44d5-a18a-633683f78e49" ascendingOrDescending="UNSPECIFIED" column-ref="COL207" name="cod_tipo_despesa" physicalName="cod_tipo_despesa" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB212" populated="true" UUID="1a2f3b75-605e-46dc-b1cd-a356d2ee616f" name="senado_gasolina" objectType="TABLE" physicalName="senado_gasolina" >
+   <remarks>Tabela que armazena dados sobre os gastos dos senadores com combustíveis.</remarks>
+   <folder id="FOLTAB2121" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL213" populated="true" UUID="ebc248ed-1525-4310-b2bd-e4502494c170" autoIncrement="false" autoIncrementSequenceName="senado_gasolina_cod_registro_combustivel_seq" defaultValue="" name="cod_registro_combustivel" nullable="0" physicalName="cod_registro_combustivel" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL214" populated="true" UUID="2346239d-1a94-4791-9340-0f81c0a58a7b" autoIncrement="false" autoIncrementSequenceName="senado_gasolina_periodo_seq" defaultValue="" name="periodo" nullable="0" physicalName="periodo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL215" populated="true" UUID="c8bd860c-c2cf-47b8-b04e-d791e1f72a23" autoIncrement="false" autoIncrementSequenceName="senado_gasolina_data_seq" defaultValue="" name="data" nullable="0" physicalName="data" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL216" populated="true" UUID="dee1817e-3158-4815-9feb-59c5194d31b9" autoIncrement="false" autoIncrementSequenceName="senado_gasolina_cod_senador_seq" defaultValue="" name="cod_senador" nullable="0" physicalName="cod_senador" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL217" populated="true" UUID="d80d93a1-b659-4e2b-a294-d17e0172884c" autoIncrement="false" autoIncrementSequenceName="senado_gasolina_cod_tipo_despesa_seq" defaultValue="" name="cod_tipo_despesa" nullable="0" physicalName="cod_tipo_despesa" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL218" populated="true" UUID="896bf3df-2849-4a5a-b42c-e309b426fe83" autoIncrement="false" autoIncrementSequenceName="senado_gasolina_veiculo_seq" defaultValue="" name="veiculo" nullable="1" physicalName="veiculo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL219" populated="true" UUID="3d4d05a2-790d-4491-a996-40f8f59faf5e" autoIncrement="false" autoIncrementSequenceName="senado_gasolina_valor_seq" defaultValue="" name="valor" nullable="0" physicalName="valor" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB2123" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB2122" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB2124" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX220" populated="true" UUID="b9cedbe6-dc66-42cf-a787-f1e2b64664f0" clustered="false" name="pk_cod_registro_combustivel" physicalName="pk_cod_registro_combustivel" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC221" populated="true" UUID="816bf122-438f-42f6-84e3-77674b92eee0" ascendingOrDescending="UNSPECIFIED" column-ref="COL213" name="cod_registro_combustivel" physicalName="cod_registro_combustivel" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB222" populated="true" UUID="0d6ad85b-4d68-476b-9a25-7112122c8d99" name="senado_cad_grupo_despesas" objectType="TABLE" physicalName="senado_cad_grupo_despesas" >
+   <remarks>Tabela que armazena dados sobre os grupos de despesas.</remarks>
+   <folder id="FOLTAB2221" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL223" populated="true" UUID="139a4538-68f9-41d2-92c1-b190b45826bd" autoIncrement="false" autoIncrementSequenceName="senado_cad_grupo_despesas_cod_grupo_despesa_seq" defaultValue="" name="cod_grupo_despesa" nullable="0" physicalName="cod_grupo_despesa" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL224" populated="true" UUID="43dce099-b43b-4e33-9c47-25df1f796ae9" autoIncrement="false" autoIncrementSequenceName="senado_cad_grupo_despesas_grupo_despesa_seq" defaultValue="" name="grupo_despesa" nullable="0" physicalName="grupo_despesa" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB2223" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB2222" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB2224" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX225" populated="true" UUID="59ac0c1c-dfa0-455d-9604-c4078f8cdd8f" clustered="false" name="pk_cod_grupo_despesa" physicalName="pk_cod_grupo_despesa" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC226" populated="true" UUID="6887e080-bda2-43f9-a7c3-c54e8b938784" ascendingOrDescending="UNSPECIFIED" column-ref="COL223" name="cod_grupo_despesa" physicalName="cod_grupo_despesa" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB227" populated="true" UUID="8ad20ffd-f719-43ef-963c-fab5022d8d21" name="senado_viagens_oficiais" objectType="TABLE" physicalName="senado_viagens_oficiais" >
+   <remarks>Tabela que armazena dados sobre os gastos com as viagens oficiais. Estes gastos não tem relação com as viagens de deslocamento entre o estado de origem do senador e Brasília.</remarks>
+   <folder id="FOLTAB2271" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL228" populated="true" UUID="ad813518-1895-4fa6-abd2-6413dcdd68e8" autoIncrement="false" autoIncrementSequenceName="senado_viagens_oficiais_cod_viagem_oficial_seq" defaultValue="" name="cod_viagem_oficial" nullable="0" physicalName="cod_viagem_oficial" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL229" populated="true" UUID="bf717ac9-1517-45a6-b5b6-bacc7f842375" autoIncrement="false" autoIncrementSequenceName="senado_viagens_oficiais_periodo_seq" defaultValue="" name="periodo" nullable="0" physicalName="periodo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL230" populated="true" UUID="a51b5c8e-4c70-489c-95fd-89a961f167bf" autoIncrement="false" autoIncrementSequenceName="senado_viagens_oficiais_data_emissao_bilhete_seq" defaultValue="" name="data_emissao_bilhete" nullable="0" physicalName="data_emissao_bilhete" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL231" populated="true" UUID="9c8f9086-5fca-4a84-8428-002aaa3a6538" autoIncrement="false" autoIncrementSequenceName="senado_viagens_oficiais_cod_senador_seq" defaultValue="" name="cod_senador" nullable="0" physicalName="cod_senador" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL232" populated="true" UUID="affc3d04-5116-4d21-81a3-2b757f136361" autoIncrement="false" autoIncrementSequenceName="senado_viagens_oficiais_cod_tipo_despesa_seq" defaultValue="" name="cod_tipo_despesa" nullable="0" physicalName="cod_tipo_despesa" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL233" populated="true" UUID="f9d7be99-2623-44ef-babc-a1a5bdd52a2b" autoIncrement="false" autoIncrementSequenceName="senado_viagens_oficiais_motivo_seq" defaultValue="" name="motivo" nullable="0" physicalName="motivo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL234" populated="true" UUID="4c73325e-f164-4f90-8392-9a15b343037f" autoIncrement="false" autoIncrementSequenceName="senado_viagens_oficiais_valor_seq" defaultValue="" name="valor" nullable="0" physicalName="valor" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB2273" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB2272" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB2274" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX235" populated="true" UUID="226e19d3-ac60-4648-923d-fe02f04a1f29" clustered="false" name="pk_cod_viagem_oficial" physicalName="pk_cod_viagem_oficial" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC236" populated="true" UUID="9f7be391-d25a-4d2b-bc2a-efc695f28e63" ascendingOrDescending="UNSPECIFIED" column-ref="COL228" name="cod_viagem_oficial" physicalName="cod_viagem_oficial" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB237" populated="true" UUID="6172b038-9cb1-45c4-9994-fc08805e4e5d" name="senado_ceaps" objectType="TABLE" physicalName="senado_ceaps" >
+   <remarks>Ceaps significa Cota para o Exercício da Atividade Parlamentar dos Senadores. É o sistema usado para ressarcimento de despesas efetuadas pelos senadores no exercício da atividade parlamentar.</remarks>
+   <folder id="FOLTAB2371" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL238" populated="true" UUID="46e8f248-5adc-4e93-acd7-2868a017ef42" autoIncrement="false" autoIncrementSequenceName="senado_ceaps_cod_documento_seq" defaultValue="" name="cod_documento" nullable="0" physicalName="cod_documento" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL239" populated="true" UUID="0374a59c-ef0b-491c-b2a7-e8566b659533" autoIncrement="false" autoIncrementSequenceName="senado_ceaps_periodo_seq" defaultValue="" name="periodo" nullable="0" physicalName="periodo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL240" populated="true" UUID="549d6ca7-e1eb-4189-bea4-66e4396ed75a" autoIncrement="false" autoIncrementSequenceName="senado_ceaps_data_documento_sistema_seq" defaultValue="" name="data_documento_sistema" nullable="0" physicalName="data_documento_sistema" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL241" populated="true" UUID="d328170e-a184-4af0-8474-8930de33b56a" autoIncrement="false" autoIncrementSequenceName="senado_ceaps_cod_senador_seq" defaultValue="" name="cod_senador" nullable="0" physicalName="cod_senador" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL242" populated="true" UUID="e912e056-6854-40fa-adbf-e2984c2dd946" autoIncrement="false" autoIncrementSequenceName="senado_ceaps_cod_tipo_despesa_seq" defaultValue="" name="cod_tipo_despesa" nullable="0" physicalName="cod_tipo_despesa" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL243" populated="true" UUID="6679eb28-5b6b-4050-b56d-b5052db4e8de" autoIncrement="false" autoIncrementSequenceName="senado_ceaps_historico_seq" defaultValue="" name="historico" nullable="0" physicalName="historico" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL244" populated="true" UUID="2aeebc67-6927-4bad-a62b-dfecf0e4acd9" autoIncrement="false" autoIncrementSequenceName="senado_ceaps_valor_seq" defaultValue="" name="valor" nullable="0" physicalName="valor" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB2373" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB2372" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB2374" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX245" populated="true" UUID="d181777d-b3af-46b1-ab93-b01eea957e45" clustered="false" name="pk_cod_documento" physicalName="pk_cod_documento" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC246" populated="true" UUID="a60d18c3-f440-43cc-8318-a198f900cbdf" ascendingOrDescending="UNSPECIFIED" column-ref="COL238" name="cod_documento" physicalName="cod_documento" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL247" populated="true" UUID="a4a3a92e-95c5-4380-acb7-241410a53d9e" deferrability="7" deleteRule="3" fk-table-ref="TAB145" fkCardinality="6" identifying="false" name="senado_cad_folha_senado_remuneracao_fk" physicalName="senado_cad_folha_senado_remuneracao_fk" pk-table-ref="TAB140" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP248" populated="true" UUID="716569d8-be45-4d8a-84fa-a5f7973b73d4" fk-column-ref="COL154" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL141" />
+   </relationship>
+   <relationship id="REL249" populated="true" UUID="944012f1-a34c-40f2-a4db-7d114c51e58d" deferrability="7" deleteRule="3" fk-table-ref="TAB145" fkCardinality="6" identifying="false" name="senado_cad_func_local_exercicio_senado_remuneracao_fk" physicalName="senado_cad_func_local_exercicio_senado_remuneracao_fk" pk-table-ref="TAB174" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP250" populated="true" UUID="ee882bdc-fc66-44e6-9bdf-d39ec9e12604" fk-column-ref="COL153" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL175" />
+   </relationship>
+   <relationship id="REL251" populated="true" UUID="a558c645-23ad-4c90-8ba0-018524345970" deferrability="7" deleteRule="3" fk-table-ref="TAB145" fkCardinality="7" identifying="false" name="senado_cad_func_cargos_senado_remuneracao_fk" physicalName="senado_cad_func_cargos_senado_remuneracao_fk" pk-table-ref="TAB179" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP252" populated="true" UUID="ec8ee19f-08df-48ff-9644-5eef1725ac31" fk-column-ref="COL151" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL180" />
+   </relationship>
+   <relationship id="REL253" populated="true" UUID="7d1bf1ed-ab86-4a13-8b43-45788644047a" deferrability="7" deleteRule="3" fk-table-ref="TAB145" fkCardinality="7" identifying="false" name="senado_cad_senadores_senado_remuneracao_fk" physicalName="senado_cad_senadores_senado_remuneracao_fk" pk-table-ref="TAB184" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP254" populated="true" UUID="6643f16b-47ee-4501-baaf-21e169dc0784" fk-column-ref="COL152" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL185" />
+   </relationship>
+   <relationship id="REL255" populated="true" UUID="303dd4f2-e765-4de9-a844-27ddd208d4c9" deferrability="7" deleteRule="3" fk-table-ref="TAB212" fkCardinality="6" identifying="false" name="senado_cad_senadores_senado_gasolina_fk" physicalName="senado_cad_senadores_senado_gasolina_fk" pk-table-ref="TAB184" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP256" populated="true" UUID="ee8358f8-d8e6-4cab-a241-e1eff94f2d83" fk-column-ref="COL216" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL185" />
+   </relationship>
+   <relationship id="REL257" populated="true" UUID="91481913-afb8-40fb-a4ad-930db4c85b3e" deferrability="7" deleteRule="3" fk-table-ref="TAB227" fkCardinality="6" identifying="false" name="senado_cad_senadores_senado_viagens_oficiais_fk" physicalName="senado_cad_senadores_senado_viagens_oficiais_fk" pk-table-ref="TAB184" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP258" populated="true" UUID="36698b0f-a488-4e15-8ce3-00e2db21dbbc" fk-column-ref="COL231" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL185" />
+   </relationship>
+   <relationship id="REL259" populated="true" UUID="6ab2173c-cba4-4d7f-9a60-06fb4e550601" deferrability="7" deleteRule="3" fk-table-ref="TAB237" fkCardinality="6" identifying="false" name="senado_cad_senadores_senado_ceaps_fk" physicalName="senado_cad_senadores_senado_ceaps_fk" pk-table-ref="TAB184" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP260" populated="true" UUID="2f492d8e-1dcd-4cae-a4bb-2e6832cb856f" fk-column-ref="COL241" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL185" />
+   </relationship>
+   <relationship id="REL261" populated="true" UUID="ad514313-3c1f-40c6-99d0-f66c5ce757b9" deferrability="7" deleteRule="3" fk-table-ref="TAB145" fkCardinality="6" identifying="false" name="senado_cad_func_categoria_senado_remuneracao_fk" physicalName="senado_cad_func_categoria_senado_remuneracao_fk" pk-table-ref="TAB200" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP262" populated="true" UUID="c347d847-b04b-4583-b9a7-6c12cb1f84f2" fk-column-ref="COL150" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL201" />
+   </relationship>
+   <relationship id="REL263" populated="true" UUID="de7dd9aa-db4c-4fed-b75c-5eae8c284f75" deferrability="7" deleteRule="3" fk-table-ref="TAB145" fkCardinality="7" identifying="false" name="senado_cad_tipo_despesas_senado_remuneracao_fk" physicalName="senado_cad_tipo_despesas_senado_remuneracao_fk" pk-table-ref="TAB206" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP264" populated="true" UUID="64be2bff-84bc-4037-aa34-8bd845b4fa5d" fk-column-ref="COL149" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL207" />
+   </relationship>
+   <relationship id="REL265" populated="true" UUID="c9e573d7-7182-413a-9a21-1f057ddb34d7" deferrability="7" deleteRule="3" fk-table-ref="TAB200" fkCardinality="6" identifying="false" name="senado_cad_tipo_despesas_senado_cad_func_categoria_fk" physicalName="senado_cad_tipo_despesas_senado_cad_func_categoria_fk" pk-table-ref="TAB206" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP266" populated="true" UUID="6b47c58a-9e3a-47ac-9f62-c4ae44137184" fk-column-ref="COL202" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL207" />
+   </relationship>
+   <relationship id="REL267" populated="true" UUID="6a82cbe9-5c37-489f-ad51-ca5a9336bb7a" deferrability="7" deleteRule="3" fk-table-ref="TAB212" fkCardinality="6" identifying="false" name="senado_cad_tipo_despesas_senado_gasolina_fk" physicalName="senado_cad_tipo_despesas_senado_gasolina_fk" pk-table-ref="TAB206" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP268" populated="true" UUID="52503724-2581-4086-acf5-d4de5482bdad" fk-column-ref="COL217" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL207" />
+   </relationship>
+   <relationship id="REL269" populated="true" UUID="564d70fd-715b-4dac-be2f-de8a7c3bff36" deferrability="7" deleteRule="3" fk-table-ref="TAB227" fkCardinality="7" identifying="false" name="senado_cad_tipo_despesas_senado_viagens_oficiais_fk" physicalName="senado_cad_tipo_despesas_senado_viagens_oficiais_fk" pk-table-ref="TAB206" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP270" populated="true" UUID="02fcf7fd-dc1e-4545-864b-01c0ce4f2573" fk-column-ref="COL232" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL207" />
+   </relationship>
+   <relationship id="REL271" populated="true" UUID="1c9a6228-4191-4551-9559-21c32fa96398" deferrability="7" deleteRule="3" fk-table-ref="TAB237" fkCardinality="7" identifying="false" name="senado_cad_tipo_despesas_senado_ceaps_fk" physicalName="senado_cad_tipo_despesas_senado_ceaps_fk" pk-table-ref="TAB206" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP272" populated="true" UUID="5a96094c-640c-4970-91e7-65ec83922d35" fk-column-ref="COL242" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL207" />
+   </relationship>
+   <relationship id="REL273" populated="true" UUID="6859be1d-8447-49c0-b75c-1ae51684a0c0" deferrability="7" deleteRule="3" fk-table-ref="TAB206" fkCardinality="6" identifying="false" name="senado_cad_grupo_despesas_senado_cad_tipo_despesas_fk" physicalName="senado_cad_grupo_despesas_senado_cad_tipo_despesas_fk" pk-table-ref="TAB222" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP274" populated="true" UUID="056b7ac8-7eae-4d26-a2bd-b6ba009f3dfe" fk-column-ref="COL208" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL223" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="true" target-schema="senado_transacional"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.0" viewportX="298" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB140" x="21" y="41" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB145" x="305" y="40" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB174" x="20" y="163" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB179" x="22" y="289" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB184" x="586" y="20" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB200" x="176" y="486" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB206" x="862" y="538" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB212" x="1162" y="95" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB222" x="1080" y="397" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB227" x="718" y="367" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB237" x="895" y="163" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL247" pkConnection="0.7543859649122807" fkConnection="0.3617021276595745" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL249" pkConnection="0.8245614035087719" fkConnection="0.44854881266490765" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL251" pkConnection="0.6491228070175439" fkConnection="0.47229551451187335" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL253" pkConnection="0.7674418604651163" fkConnection="0.45646437994722955" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL261" pkConnection="0.40756302521008403" fkConnection="0.957983193277311" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL263" pkConnection="0.23255813953488372" fkConnection="0.5567282321899736" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL265" pkConnection="0.7183098591549296" fkConnection="0.2676056338028169" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL255" pkConnection="0.5592417061611374" fkConnection="0.34513274336283184" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL267" pkConnection="0.6041666666666666" fkConnection="0.22264150943396227" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL273" pkConnection="0.125" fkConnection="0.9583333333333334" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL257" pkConnection="0.9512195121951219" fkConnection="0.26609442060085836" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL269" pkConnection="0.36666666666666664" fkConnection="0.7124463519313304" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL259" pkConnection="0.7298578199052133" fkConnection="0.08849557522123894" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL271" pkConnection="0.5416666666666666" fkConnection="0.4217391304347826" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+   <olap-session id="0" db-ref="ppdb">
+    <Schema id="1" name="New OLAP Schema"/>
+   </olap-session>
+  </olap>
+  <olap-gui>
+   <olap-edit-session osession-ref="0">
+    <play-pen zoom="1.0" viewportX="0" viewportY="0">
+    </play-pen>
+   </olap-edit-session>
+  </olap-gui>
+</architect-project>
