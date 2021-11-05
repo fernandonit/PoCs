@@ -30,76 +30,49 @@ Sem informar o histórico de remuneração com a identificação dos deputados, 
 O processo de análise dos dados compreendeu as seguintes etapas:
 
 
-1. Extração dos dados
+Etapa 1 - Extração dos dados
 
-	- Cota parlamentar (cotão): https://www12.Senado.leg.br/transparencia/dados-abertos-transparencia/dados-abertos-ceaps
-	  
-	  Cotas para o exercício da atividade parlamentar dos Senadores (CEAPS), conhecido como Cotão. São valores reembolsados através da apresentação de notas fiscais e dentro de regras definidas pela Casa.
+Cota parlamentar (cotão): https://www12.Senado.leg.br/transparencia/dados-abertos-transparencia/dados-abertos-ceaps. Cotas para o exercício da atividade parlamentar dos Senadores (CEAPS), conhecido como Cotão. São valores reembolsados através da apresentação de notas fiscais e dentro de regras definidas pela Casa.
 	
 	
-	- Remuneração: http://www.Senado.leg.br/transparencia/rh/servidores/consulta_remuneracao.asp
-
-	  Informações sobre as remunerações pagas aos senadores e para os funcionários que trabalham sob sua supervisão, sejam eles comissionados ou próprios.
-	  
-	  Apenas os senadores são identificados nos arquivos. Comissionados e concursados não são identificados, apenas os lançamentos dos pagamentos são registrados e relacionados aos gabinetes e escritórios políticos dos senadores.
+Remuneração: http://www.Senado.leg.br/transparencia/rh/servidores/consulta_remuneracao.asp. Informações sobre as remunerações pagas aos senadores e para os funcionários que trabalham sob sua supervisão, sejam eles comissionados ou próprios. Apenas os senadores são identificados nos arquivos. Comissionados e concursados não são identificados, apenas os lançamentos dos pagamentos são registrados e relacionados aos gabinetes e escritórios políticos dos senadores.
 
 
-	- Viagens oficiais: https://www12.Senado.leg.br/transparencia/sen/viagens-oficiais
-
-	  Registro dos gastos com passagens e seguros relacionados às viagens oficiais dos senadores. A viagem pode acontecer por iniciativa do senador ou da Casa. As diárias relativas as missões são computadas nas remunerações.
+Viagens oficiais: https://www12.Senado.leg.br/transparencia/sen/viagens-oficiais. Registro dos gastos com passagens e seguros relacionados às viagens oficiais dos senadores. A viagem pode acontecer por iniciativa do senador ou da Casa. As diárias relativas as missões são computadas nas remunerações.
 	  
 
-	- Combustíveis: https://www12.Senado.leg.br/transparencia/sen/gastos-com-combustivel
+Combustíveis: https://www12.Senado.leg.br/transparencia/sen/gastos-com-combustivel. Gastos dos senadores com combustíveis. Embora exista previsão para esta despesa no Cotão, ela também acontece de forma apartada. O site do Senado não informa a diferença entre este gasto com combustível e o do Cotão. Foram incluídos no estudo em função dos valores substanciais.
+
+
+Despesas com assistência à saúde dos senadores: o senado publica o valor sumarizado e sem a identificação dos senadores. Como não é possível identitificar os senadores responsáveis pelas despesas, os gastos com saúde ficaram fora do trabalho.
+
+
+Todos os arquivos foram extraídos a partir de 2018.
+
+
+
+Etapa 2 - Desenho, construção e carga do banco de dados do modelo transacional
+
+A partir da análise dos dados extraídos na etapa 1, foram gerados novos arquivos do tipo CSV que se encaixam com o modelo transacional gerado para este projeto. O SQL Power Architect foi a ferramenta utilizada para a construção do modelo e geração do script de criação das tabelas, estas sob o schema senado_transacional. O PostgreSQL foi o gerenciador de banco de dados escolhido para o projeto. A carga dos arquivos CSV foi realizada pela ferramenta de importação do pgAdmin.
+
+
+
+Etapa 3 - Desenho, construção e carga do modelo multidimensional
+
+A exemplo da etapa anterior, foi utilizado o SQL Power Architect para a construção do modelo e a geração do script de criação das tabelas, estas sob o schema senado_dw. Foi utilizado o Pentaho Data Integration para a transformação e carga dos dados nas tabelas do schema dw.
+
+
+
+Etapa 4 - Construção dos painéis
+
+Foi utilizado o Power BI para a criação dos seguintes painéis:
 	
-	  Gastos dos senadores com combustíveis. Embora exista previsão para esta despesa no Cotão, ela também acontece de forma apartada.
-	  
-	  O site do Senado não informa a diferença entre este gasto com combustível e o do Cotão. Foram incluídos no estudo em função dos valores substanciais.
-
-
-	- Despesas com assistência à saúde dos senadores
-	
-	  O senado publica o valor sumarizado e sem a identificação dos senadores. Como não é possível identitificar os senadores responsáveis pelas despesas, os gastos com saúde ficaram fora do trabalho.
-
-
-	Todos os arquivos foram extraídos a partir de 2018.
-
-
-
-2 - Desenho, construção e carga do banco de dados do modelo transacional
-
-	A partir da análise dos dados extraídos na etapa 1, foram gerados novos arquivos do tipo CSV que se encaixam com o modelo transacional gerado para este projeto.
-	
-	O SQL Power Architect foi a ferramenta utilizada para a construção do modelo e geração do script de criação das tabelas, estas sob o schema senado_transacional.
-	
-	O PostgreSQL foi o gerenciador de banco de dados escolhido para o projeto.
-	
-	A carga dos arquivos CSV foi realizada pela ferramenta de importação do pgAdmin.
-	
-	
-
-3 - Desenho, construção e carga do modelo multidimensional
-
-	A exemplo da etapa anterior, foi utilizado o SQL Power Architect para a construção do modelo e a geração do script de criação das tabelas, estas sob o schema senado_dw.
-	
-	Foi utilizado o Pentaho Data Integration para a transformação e carga dos dados nas tabelas do schema dw.
-
-
-
-4 - Construção dos painéis
-
-	Foi utilizado o Power BI para a criação dos seguintes painéis:
-	
-	- Visão geral
-
-	- Visão por regiões e estados dos senadores
-
-	- Visão por partidos
-
-	- Detalhamento de despesas
-
-	- Remuneração dos senadores
-
-	- Visão por grupo de despesas
+Visão geral
+Visão por regiões e estados dos senadores
+Visão por partidos
+Detalhamento de despesas
+Remuneração dos senadores
+Visão por grupo de despesas
 	
 	
 
