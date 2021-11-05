@@ -34,21 +34,15 @@ Etapa 1 - Extração dos dados
 
 Cota parlamentar (cotão): https://www12.Senado.leg.br/transparencia/dados-abertos-transparencia/dados-abertos-ceaps. Cotas para o exercício da atividade parlamentar dos Senadores (CEAPS), conhecido como Cotão. São valores reembolsados através da apresentação de notas fiscais e dentro de regras definidas pela Casa.
 	
-	
 Remuneração: http://www.Senado.leg.br/transparencia/rh/servidores/consulta_remuneracao.asp. Informações sobre as remunerações pagas aos senadores e para os funcionários que trabalham sob sua supervisão, sejam eles comissionados ou próprios. Apenas os senadores são identificados nos arquivos. Comissionados e concursados não são identificados, apenas os lançamentos dos pagamentos são registrados e relacionados aos gabinetes e escritórios políticos dos senadores.
 
-
 Viagens oficiais: https://www12.Senado.leg.br/transparencia/sen/viagens-oficiais. Registro dos gastos com passagens e seguros relacionados às viagens oficiais dos senadores. A viagem pode acontecer por iniciativa do senador ou da Casa. As diárias relativas as missões são computadas nas remunerações.
-	  
 
 Combustíveis: https://www12.Senado.leg.br/transparencia/sen/gastos-com-combustivel. Gastos dos senadores com combustíveis. Embora exista previsão para esta despesa no Cotão, ela também acontece de forma apartada. O site do Senado não informa a diferença entre este gasto com combustível e o do Cotão. Foram incluídos no estudo em função dos valores substanciais.
 
-
 Despesas com assistência à saúde dos senadores: o senado publica o valor sumarizado e sem a identificação dos senadores. Como não é possível identitificar os senadores responsáveis pelas despesas, os gastos com saúde ficaram fora do trabalho.
 
-
 Todos os arquivos foram extraídos a partir de 2018.
-
 
 
 Etapa 2 - Desenho, construção e carga do banco de dados do modelo transacional
@@ -56,11 +50,9 @@ Etapa 2 - Desenho, construção e carga do banco de dados do modelo transacional
 A partir da análise dos dados extraídos na etapa 1, foram gerados novos arquivos do tipo CSV que se encaixam com o modelo transacional gerado para este projeto. O SQL Power Architect foi a ferramenta utilizada para a construção do modelo e geração do script de criação das tabelas, estas sob o schema senado_transacional. O PostgreSQL foi o gerenciador de banco de dados escolhido para o projeto. A carga dos arquivos CSV foi realizada pela ferramenta de importação do pgAdmin.
 
 
-
 Etapa 3 - Desenho, construção e carga do modelo multidimensional
 
 A exemplo da etapa anterior, foi utilizado o SQL Power Architect para a construção do modelo e a geração do script de criação das tabelas, estas sob o schema senado_dw. Foi utilizado o Pentaho Data Integration para a transformação e carga dos dados nas tabelas do schema dw.
-
 
 
 Etapa 4 - Construção dos painéis
@@ -75,7 +67,6 @@ Remuneração dos senadores
 Visão por grupo de despesas
 	
 	
-
 ### Abstract
 
 The legislative activity of our parliamentarians in Brasilia has a cost. In addition to salaries and extras, there are other expenses related to legislative activities in parliament that are individual control. Individual control means expenses that do not need to go through committees, votes, negotiations, and sanctions.
@@ -97,77 +88,41 @@ Without informing the history of remuneration with the identification of deputie
 The data analysis process comprised the following steps:
 
 
-1. Data extraction
+Stage 1 - Data extraction
 
-	- Parliamentary quota (cotão): https://www12.Senado.leg.br/transparencia/dados-abertos-transparencia/dados-abertos-ceaps
+Parliamentary quota (cotão): https://www12.Senado.leg.br/transparencia/dados-abertos-transparencia/dados-abertos-ceaps. Quotas for the exercise of the parliamentary activity of senators (CEAPS), known as Cotão. These amounts are reimbursed through the presentation of invoices and within the rules defined by the Senate.
+	
+Remuneration: http://www.Senado.leg.br/transparencia/rh/servidores/consulta_remuneracao.asp. Information on the salaries paid to senators and to employees working under their supervision, whether commissioned or Senate officials. Only senators are identified in the archives. Commissioned and concursados are not identified, only the postings of payments are recorded and related to the offices and political offices of senators.
+
+Official trips: https://www12.Senado.leg.br/transparencia/sen/viagens-oficiais. Record of expenses with tickets and insurance related to the official travel of senators. The trip can happen on the initiative of the senator or the House. The daily rates relating to the missions are computed in the remunerations.
 	  
-	  Quotas for the exercise of the parliamentary activity of senators (CEAPS), known as Cotão. These amounts are reimbursed through the presentation of invoices and within the rules defined by the Senate.
+Fuels: https://www12.Senado.leg.br/transparencia/sen/gastos-com-combustivel. Senators' spending on fuel. Although there is a forecast for this expenditure in Cotão, it also happens in a separate way. The Senate website does not report the difference between this fuel expenditure and that of Cotão. They were included in the study according to the substantial values.
+
+Senators' health care expenses: The Senate publishes the sumarized value and without the identification of senators. Since it is not possible to identify the senators responsible for the expenses, health spending was out of work.
+
+All files were extracted from 2018.
+
+
+Stage 2 - Design, construction, and load of the transactional model database
+
+From the analysis of the data extracted in step 1, new CSV-type files were generated that fit with the transactional model generated for this project. SQL Power Architect was the tool used to construct the model and generate the script for creating the tables, these under the schema  senado_transacional. PostgreSQL was the database manager chosen for the project. The loading of the CSV files was performed by the import tool of pgAdmin.
 	
 	
-	- Remuneration: http://www.Senado.leg.br/transparencia/rh/servidores/consulta_remuneracao.asp
+Stage 3 - Design, construction, and load of the multidimensional model
 
-	  Information on the salaries paid to senators and to employees working under their supervision, whether commissioned or Senate officials.
-	  
-	  Only senators are identified in the archives. Commissioned and concursados are not identified, only the postings of payments are recorded and related to the offices and political offices of senators.
+Like the previous step, SQL Power Architect was used to construct the model and generate the table creation script, which was under the schema  senado_dw. Pentaho Data Integration was used to transform and load the data in the schema    dw tables.
 
 
-	- Official trips: https://www12.Senado.leg.br/transparencia/sen/viagens-oficiais
+Stage 4 - Construction of panels
 
-	  Record of expenses with tickets and insurance related to the official travel of senators. The trip can happen on the initiative of the senator or the House. The daily rates relating to the missions are computed in the remunerations.
-	  
-
-	- Fuels: https://www12.Senado.leg.br/transparencia/sen/gastos-com-combustivel
+Power BI was used to create the following panels:
 	
-	  Senators' spending on fuel. Although there is a forecast for this expenditure in Cotão, it also happens in a separate way.
-	  
-	  The Senate website does not report the difference between this fuel expenditure and that of Cotão. They were included in the study according to the substantial values.
-
-
-	- Senators' health care expenses
-	
-	  The Senate publishes the sumarized value and without the identification of senators. Since it is not possible to identify the senators responsible for the expenses, health spending was out of work.
-
-
-	All files were extracted from 2018.
-
-
-
-2 - Design, construction, and load of the transactional model database
-
-	From the analysis of the data extracted in step 1, new CSV-type files were generated that fit with the transactional model generated for this project.
-	
-	SQL Power Architect was the tool used to construct the model and generate the script for creating the tables, these under the schema  senado_transacional.
-	
-	PostgreSQL was the database manager chosen for the project.
-	
-	The loading of the CSV files was performed by the import tool of pgAdmin.
-	
-	
-
-3 - Design, construction, and load of the multidimensional model
-
-	Like the previous step, SQL Power Architect was used to construct the model and generate the table creation script, which was under the schema  senado_dw.
-	
-	Pentaho Data Integration was used to transform and load the data in the schema    dw tables.
-
-
-
-4 - Construction of panels
-
-	Power BI was used to create the following panels:
-	
-	- Overview
-
-	- View by regions and states of senators
-
-	- Vision by parties
-
-	- Detailing of expenses
-
-	- Remuneration of senators
-
-	- View by expense group
-
+Overview
+View by regions and states of senators
+Vision by parties
+Detailing of expenses
+Remuneration of senators
+View by expense group
 
 ---
 
