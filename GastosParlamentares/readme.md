@@ -59,12 +59,12 @@ Etapa 4 - Construção dos painéis
 
 Foi utilizado o Power BI para a criação dos seguintes painéis:
 	
-Visão geral
-Visão por regiões e estados dos senadores
-Visão por partidos
-Detalhamento de despesas
-Remuneração dos senadores
-Visão por grupo de despesas
+- Visão geral
+- Visão por regiões e estados dos senadores
+- Visão por partidos
+- Detalhamento de despesas
+- Remuneração dos senadores
+- Visão por grupo de despesas
 	
 	
 ### Abstract
@@ -117,12 +117,12 @@ Stage 4 - Construction of panels
 
 Power BI was used to create the following panels:
 	
-Overview
-View by regions and states of senators
-Vision by parties
-Detailing of expenses
-Remuneration of senators
-View by expense group
+- Overview
+- View by regions and states of senators
+- Vision by parties
+- Detailing of expenses
+- Remuneration of senators
+- View by expense group
 
 ---
 
