@@ -20,7 +20,11 @@ O que este trabalho visa apresentar é a composição dos gastos que estão rela
 
 ### Abstract
 
-The legislative activity of our parliamentarians in Brasilia has a cost.
+The legislative activity of our parliamentarians in Brasília comes at a cost. In addition to salaries and extras, there are other expenses related to legislative activities in parliament that are under individual control. By individual control we mean expenses that do not need to go through commissions, votes, negotiations and sanctions.
+
+These are pre-established expenditure possibilities that are not necessarily mandatory. Expenses that are not related to the congress's building maintenance, for example. Or with the taxes and fees that Congress has to pay to remain functional, such as IPTU, electricity and water. Or with spending forecasts that depend on consensus and plenary vote, such as bills and amendments.
+
+What this paper aims to present is the composition of expenditures that are individually related to parliamentarians, such as air tickets, hiring commissioners, rents and advertising material. For this purpose, a complete Business Intelligence process was carried out, from data extraction to the display of relevant information on the panels, going through all the stages of the process.
 
 
 ---
